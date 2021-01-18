@@ -2,15 +2,77 @@
 <html>
     <head>
         <meta charset="UTF-8>">
+        <style>
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            
+            }
+            input {
+                display:block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            li {
+                display: inline-block;
+                padding: 14px 16px;
+                text-align: center;
+                font-size: 13px;
+                
+            
+            }
+            .block {
+                display: inline-block;
+                border-radius: 2px;
+                height: 30px;
+                width: 30px;
+                line-height: 24px;
+                
+
+            }
+            body {
+                display: grid;
+                width: 100%;
+                grid-template-areas: "header" "main" "footer";
+                font-family: Arial, sans-serif;
+            
+            }
+            .profile {
+                background-size: 32px 32px;
+                border-radius: 50%;
+                vertical-align: top;
+            }
+            .apps {
+                background-size: 32px 32px;
+                height: 15px;
+                width: 15px;
+            }
+
+        </style>
     </head>
     <body>
         <header>
-
+            <ul>
+                <li style="float:left">About</li>
+                <li style="float:left">Store</li>
+                <li style="float:right"><img class="profile" src="https://lh3.googleusercontent.com/ogw/ADGmqu9CGU0QnYlEuSYL2wnpxEbLNDAM7QDLS8QtYaZv=s32-c-mo"></li>
+                <li style="float:right"><img class="apps" src="https://cdn.icon-icons.com/icons2/933/PNG/512/show-apps-button_icon-icons.com_72551.png" class="block"></a></li>
+                <li style="float:right">Images</li>
+                <li style="float:right">Gmail</li>
+            </ul>
         </header>
         <main>
-            <div class="content" id="main">
+            <div class="center" id="main">
                 <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" id="googlelogo" alt="Google">
-                <input type="text" id="search" name="search">
+                
+                <div class="searchbar">
+                    <input type="text" id="search" name="search">
+                    <center>
+                        <button class="googlesearch">Google Search</button>
+                        <button class="feelinglucky">I'm Feeling Lucky</button>
+                    </center>
+                </div>
             </div>
         </main>
         <footer>
